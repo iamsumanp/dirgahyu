@@ -157,7 +157,7 @@ export default function Home() {
           <span>check availability</span>
           <span>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Iust soluta
-            inventore
+            iventore
           </span>
         </div>
       </div>
