@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+
+:root {
+  --main-white: #ffffff;
+  --main-black: #000000;
+  --main-red: #e2402d;
+  --main-grey: #e2e2e2;
+  --main-grey-lite: #f3f3f3;
+  --main-p-grey: #545454;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: var(--main-purple);
+}
+
+html,
+body {
+  font-family: "Lato", sans-serif;
+  /* overflow-x: hidden; */
+}

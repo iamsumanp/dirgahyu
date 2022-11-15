@@ -1,0 +1,138 @@
+.container_parent {
+  padding-left: 5rem;
+}
+.containerBg {
+  display: flex;
+  flex-direction: row;
+}
+.contentBg {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  /* background-color: aqua; */
+  padding-top: 5rem;
+}
+.p_dirgahyu {
+  color: var(--main-p-grey);
+  font-size: 2rem;
+}
+.title_dirgahyu {
+  font-family: "Raleway", sans-serif !important;
+  /* font-size: 50px; */
+  font-size: 3rem;
+}
+.span_dirgahyu {
+  color: var(--main-red);
+}
+.bannerBtn {
+  margin-top: 2rem;
+  display: flex;
+}
+.banner_title {
+  display: flex;
+  flex-direction: column;
+}
+.clipPathBg {
+  flex: 1;
+}
+.dirgahyuImg {
+  height: 100%;
+  width: 100%;
+}
+.req_donate_btn {
+  border: none;
+  font-family: "Raleway", sans-serif !important;
+  padding: 7px 20px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: var(--main-white);
+  margin-right: 15%;
+  background-color: var(--main-red);
+}
+
+.bannerlinks_bg {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2.5rem;
+}
+.blood_bank_req_link {
+  display: flex;
+  align-items: center;
+  margin-right: 15%;
+}
+
+.nv_link {
+  text-decoration: none;
+  margin-right: 15%;
+}
+.icon {
+  fill: var(--main-red);
+  /* margin-right: 0.5rem; */
+}
+.search_content {
+  margin-top: 2.5rem;
+}
+.search_label {
+  font-weight: bold;
+}
+.blood_bank_req_label {
+  font-weight: 600;
+}
+.options_content {
+  margin-right: 15%;
+}
+.options_search_content {
+  display: flex;
+  margin-top: 1rem;
+  align-items: center;
+}
+.req_donate_btn {
+  border: none;
+  font-family: "Raleway", sans-serif !important;
+  padding: 7px 20px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: var(--main-white);
+  margin-right: 15%;
+  background-color: var(--main-red);
+}
+.search_btn {
+  border: none;
+  /* padding: 0.2rem 0.4rem; */
+  padding: 4px;
+
+  background-color: var(--main-grey);
+  cursor: pointer;
+  font-weight: bold;
+}
+.select_comp {
+  margin-right: 1rem;
+  border: none;
+  background-color: var(--main-grey);
+  padding: 4px;
+  outline: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+.facilities_container_bg {
+  padding-top: 3rem;
+  display: flex;
+  flex-direction: row;
+}
+.facilites_section {
+  flex: 1;
+  /* border-style: solid; */
+}
+.facility_content {
+  border-style: solid;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+.availability_section {
+  flex: 0.5;
+  padding-left: 5%;
+}

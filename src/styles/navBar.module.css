@@ -1,0 +1,67 @@
+.navBar {
+  display: flex;
+  flex-direction: row;
+  min-height: 10vh;
+  margin-left: 5rem;
+  justify-content: space-between;
+  color: var(--main-white);
+  overflow-x: hidden;
+}
+.navSection {
+  padding: 1rem 5rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  position: relative;
+  z-index: 1;
+  font-size: large;
+}
+
+.navSection::after {
+  display: block;
+  content: "";
+  background-color: var(--main-red);
+  position: absolute;
+  transform: skew(30deg);
+  width: 110%;
+  height: 100%;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  border-bottom-left-radius: 2px;
+}
+.logoImg {
+  margin: 0.5rem 5.5rem 0.5rem 1rem;
+  height: 9vh;
+  width: 10vh;
+}
+.nav_ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+.listItem {
+  margin: 0 2rem;
+  float: left;
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.loginbtndiv {
+  display: flex;
+  align-items: center;
+}
+.LogInBtn {
+  padding: 0 15px 0 0;
+  font-weight: 900;
+  cursor: pointer;
+
+  outline: none;
+}
+.icon {
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
