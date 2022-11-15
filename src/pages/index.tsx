@@ -156,8 +156,8 @@ export default function Home() {
         <div className={styles.availability_section}>
           <span>check availability</span>
           <span>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
-            soluta inventore
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iust soluta
+            inventore
           </span>
         </div>
       </div>
