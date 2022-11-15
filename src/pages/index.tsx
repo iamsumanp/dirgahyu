@@ -157,9 +157,7 @@ export default function Home() {
           <span>check availability</span>
           <span>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
-            soluta inventore blanditiis rem maxime porro adipisci dolor, sunt
-            sequi dignissimos, fuga ullam voluptatibus necessitatibus na
-            distinctio eius assumenda voluptatem sit?
+            soluta inventore
           </span>
         </div>
       </div>
