@@ -1,9 +1,10 @@
-.container_parent {
-  padding-left: 5rem;
-}
 .containerBg {
   display: flex;
   flex-direction: row;
+  padding-left: 6rem;
+}
+.container_parent {
+  overflow-x: hidden;
 }
 .contentBg {
   flex: 1;
@@ -38,6 +39,7 @@
 .dirgahyuImg {
   height: 100%;
   width: 100%;
+  object-fit: cover;
 }
 .req_donate_btn {
   border: none;
@@ -99,7 +101,7 @@
 .search_btn {
   border: none;
   /* padding: 0.2rem 0.4rem; */
-  padding: 4px;
+  padding: 6px;
 
   background-color: var(--main-grey);
   cursor: pointer;
@@ -117,6 +119,9 @@
 .facilities_container_bg {
   padding-top: 3rem;
   display: flex;
+  padding-left: 6rem;
+  /* overflow-x: hidden; */
+
   flex-direction: row;
 }
 .facilites_section {
@@ -124,15 +129,95 @@
   /* border-style: solid; */
 }
 .facility_content {
-  border-style: solid;
+  /* border-style: solid; */
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 1.5rem;
   margin-bottom: 2rem;
+  border: 0.2px solid var(--main-plain-grey);
+  border-radius: 5px;
+  font-weight: 600;
 }
+
+.facility_logo {
+  /* height: 5rem;
+  width: 6rem; */
+  width: 120px;
+  height: 40px;
+  margin-right: 2rem;
+}
+.image_name_desc {
+  display: flex;
+}
+.name_desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.address_container {
+  /* display: flex; */
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 3px;
+  align-items: center;
+}
+.address_label {
+  /* font-weight: 400; */
+  font-size: 0.75rem;
+}
+.blood_types {
+  display: flex;
+  /* display: inline-flex;
+  gap: 10px; */
+  width: 100%;
+  justify-content: space-between;
+}
+
+.blood_type_label {
+  background-color: var(--main-red);
+  color: var(--main-white);
+  padding: 0 6px 3px 6px;
+}
+
 .availability_section {
-  flex: 0.5;
-  padding-left: 5%;
+  flex: 0.6;
+  /* padding-left: 5%; */
+  display: inline-flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+.avl_label {
+  color: var(--main-avl-grey);
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: "Raleway", sans-serif !important;
+  width: 40%;
+}
+.avl_arrow_icon {
+  font-size: 3.5rem;
+  color: var(--main-red);
+}
+
+.donate_container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  background-color: var(--main-red);
+  padding: 2rem 6rem 2rem 6rem;
+  color: var(--main-white);
+  letter-spacing: 1px;
+}
+.donate_blood_btn {
+  border: none;
+  background-color: var(--main-white);
+  color: var(--main-red);
+  font-weight: bold;
+  /* text-transform: uppercase; */
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  font-family: "Raleway", sans-serif !important;
 }

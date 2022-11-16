@@ -9,6 +9,9 @@ import { bloodGroup } from "../data/data";
 import { rhesusD } from "../data/data";
 import { locations } from "../data/data";
 import { facilityData } from "../data/data";
+import { MdLocationOn } from "react-icons/md";
+import { FiArrowUpRight } from "react-icons/fi";
+import { BsFillArrowRightCircleFill } from "react-icons/bs";
 
 export default function Home() {
   const [bGroup, setBGroup] = useState("A");
@@ -122,30 +125,33 @@ export default function Home() {
       </div>
       <div className={styles.facilities_container_bg}>
         <div className={styles.facilites_section}>
-          {/* <div className={styles.facility_content}>
-            <span>image</span>
-            <div className={styles.name_desc}>
-              <span>Grande Hospital</span>
-              <span>Tokha,Kathmandu</span>
-            </div>
-            <div className={styles.name_desc}>
-              <span>Blood Types</span>
-              <div className={styles.blood_types}>Tokha,Kathmandu</div>
-            </div>
-          </div> */}
           {facilityData.map((data) => (
             <div className={styles.facility_content} key={data.id}>
-              <Image src={data.image} height={20} width={20} alt={data.name} />
-              <div className={styles.name_desc}>
-                <span>{data.name}</span>
-                <span>{data.address}</span>
+              <div className={styles.image_name_desc}>
+                <Image
+                  src={data.image}
+                  height={100}
+                  width={100}
+                  alt={data.name}
+                  className={styles.facility_logo}
+                />
+                <div className={styles.name_desc}>
+                  <span style={{ marginBottom: "6px" }}>{data.name}</span>
+                  <div className={styles.address_container}>
+                    <MdLocationOn />
+                    <span className={styles.address_label}>{data.address}</span>
+                    <FiArrowUpRight />
+                  </div>
+                </div>
               </div>
               <div className={styles.name_desc}>
-                <span>Blood Types</span>
+                <span style={{ marginBottom: "6px" }}>
+                  Available Blood Types
+                </span>
                 <div className={styles.blood_types}>
                   {data.bloodtypes.map((data) => (
-                    <div key={data}>
-                      <span>{data}</span>
+                    <div key={data} className={styles.blood_type_label}>
+                      <span className={styles.address_label}>{data}</span>
                     </div>
                   ))}
                 </div>
@@ -154,11 +160,13 @@ export default function Home() {
           ))}
         </div>
         <div className={styles.availability_section}>
-          <span>check availability</span>
-          <span>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. iventore
-          </span>
+          <span className={styles.avl_label}>Check blood availability</span>
+          <BsFillArrowRightCircleFill className={styles.avl_arrow_icon} />
         </div>
+      </div>
+      <div className={styles.donate_container}>
+        <h2>Donate to save life &quot;A pint can save many lives&quot;</h2>
+        <button className={styles.donate_blood_btn}>Donate Blood</button>
       </div>
     </div>
   );
