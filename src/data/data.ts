@@ -26,3 +26,26 @@ export const facilityData = [
     bloodtypes: ["A+ve", "O+ve", "B+ve"],
   },
 ];
+export const teamMembers = [
+  {
+    id: 1,
+    name: "Aayush Dip Giri",
+    status: "Founder/CEO",
+    image:
+      "https://res.cloudinary.com/hire-station/image/upload/v1667631444/avatars/rggbnbup25ew5xlsbz95.png",
+  },
+  {
+    id: 2,
+    name: "Suman Pokharel",
+    status: "CTO",
+    image:
+      "https://res.cloudinary.com/hire-station/image/upload/v1667631444/avatars/rggbnbup25ew5xlsbz95.png",
+  },
+  {
+    id: 3,
+    name: "Rojina Lamichane",
+    status: "Operational Head",
+    image:
+      "https://res.cloudinary.com/hire-station/image/upload/v1667631444/avatars/rggbnbup25ew5xlsbz95.png",
+  },
+];

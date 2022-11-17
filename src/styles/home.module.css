@@ -41,16 +41,6 @@
   width: 100%;
   object-fit: cover;
 }
-/* .req_donate_btn {
-  border: none;
-  font-family: "Raleway", sans-serif !important;
-  padding: 7px 20px;
-  font-weight: 600;
-  font-size: 1.1rem;
-  color: var(--main-white);
-  margin-right: 15%;
-  background-color: var(--main-red);
-} */
 
 .bannerlinks_bg {
   display: flex;
