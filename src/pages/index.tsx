@@ -136,7 +136,9 @@ export default function Home() {
                   className={styles.facility_logo}
                 />
                 <div className={styles.name_desc}>
-                  <span style={{ marginBottom: "6px" }}>{data.name}</span>
+                  <span className={styles.name_bloodtype_label}>
+                    {data.name}
+                  </span>
                   <div className={styles.address_container}>
                     <MdLocationOn />
                     <span className={styles.address_label}>{data.address}</span>
@@ -145,7 +147,7 @@ export default function Home() {
                 </div>
               </div>
               <div className={styles.name_desc}>
-                <span style={{ marginBottom: "6px" }}>
+                <span className={styles.name_bloodtype_label}>
                   Available Blood Types
                 </span>
                 <div className={styles.blood_types}>
@@ -160,7 +162,7 @@ export default function Home() {
           ))}
         </div>
         <div className={styles.availability_section}>
-          <span className={styles.avl_label}>Check blood availability</span>
+          <span className={styles.avl_label}>Check Blood Availability</span>
           <BsFillArrowRightCircleFill className={styles.avl_arrow_icon} />
         </div>
       </div>
