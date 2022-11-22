@@ -35,7 +35,11 @@ export default function Home() {
             </h1>
             <p className={styles.p_dirgahyu}>A pint can save many lives</p>
             <div className={styles.bannerBtn}>
-              <button className={styles.req_donate_btn}>Request Blood</button>
+              <button className={styles.req_donate_btn}>
+                <Link href="/blood-bank" style={{ textDecoration: "none" }}>
+                  Request Blood
+                </Link>
+              </button>
               <button className={styles.req_donate_btn}>Donate Blood</button>
             </div>
             <div className={styles.bannerlinks_bg}>

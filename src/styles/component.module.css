@@ -67,7 +67,7 @@
   font-weight: bold;
   font-family: "Raleway", sans-serif;
   /* border-color: black; */
-  border: 2px solid var(--main-black);
+  border: 2px solid var(--main-xlight-grey);
 }
 .search_btn {
   position: absolute;
@@ -136,8 +136,75 @@
 .options_data {
   margin-top: 0.8rem;
 }
-/* .search_icon {
-  height: 4rem;
-  width: 4rem;
-} */
+
 /* end of blood bank  */
+
+/*details   */
+
+.details_container {
+  padding: 3.2rem 5rem 5rem 7em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.label_edit_container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.hello_label {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 2.3rem;
+  border-bottom: 5px solid #dfdcdc;
+}
+.edit_btn {
+  border: 1px solid var(--main-red);
+  border-radius: 2px;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  background-color: var(--main-white);
+  cursor: pointer;
+}
+.blood_bank_details_container {
+  display: flex;
+  padding-top: 3rem;
+  font-weight: bold;
+}
+.blood_bank_image_label_content {
+  padding-right: 4rem;
+  border-right: 3px solid #dfdcdc;
+}
+.avl_blood_types_content {
+  font-weight: bold;
+  margin-left: 2rem;
+}
+.avl_blood_types_data {
+  margin-top: 2rem;
+}
+.data_pint_content {
+  /* display: inline-flex; */
+  display: flex;
+  width: 100%;
+  margin-bottom: 1rem;
+  align-items: center;
+
+  /* justify-content: space-between; */
+}
+.blood_type_label {
+  background-color: var(--main-red);
+  color: var(--main-white);
+  padding: 0.2rem;
+  margin-right: 1.5rem;
+  width: 3rem;
+}
+.facility_logo {
+  /* height: 5rem;
+  width: 6rem; */
+  width: 140px;
+  height: 60px;
+  margin-right: 2rem;
+}
+/*end of details section   */

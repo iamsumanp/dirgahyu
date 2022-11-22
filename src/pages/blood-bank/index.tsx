@@ -1,12 +1,12 @@
 import { useState } from "react";
-import styles from "../styles/component.module.css";
-import homeStyles from "../styles/home.module.css";
+import styles from "../../styles/component.module.css";
+import homeStyles from "../../styles/home.module.css";
 import { BiSearch } from "react-icons/bi";
-import { bloodBanks } from "../data/data";
+import { bloodBanks } from "../../data/data";
 import Image from "next/image";
 import { MdLocationOn } from "react-icons/md";
 import { FiArrowUpRight } from "react-icons/fi";
-import { filterData } from "../data/data";
+import { filterData } from "../../data/data";
 
 export default function Bloodbank(): JSX.Element {
   const [blood_bank_keyword, setBlood_bank_keyword] = useState<string | number>(

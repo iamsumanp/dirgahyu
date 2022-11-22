@@ -90,3 +90,26 @@ export const bloodBanks = [
     bloodtypes: ["A+ve", "O+ve", "B+ve"],
   },
 ];
+
+export const dummyAvailableBloodData = [
+  {
+    blood_type: "A +ve",
+    pints: "10 pints",
+  },
+  {
+    blood_type: "O +ve",
+    pints: "28 pints",
+  },
+  {
+    blood_type: "B +ve",
+    pints: "50 pints",
+  },
+  {
+    blood_type: "O +ve",
+    pints: "30 pints",
+  },
+  {
+    blood_type: "B +ve",
+    pints: "45 pints",
+  },
+];
