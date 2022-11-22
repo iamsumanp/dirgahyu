@@ -1,3 +1,4 @@
+/* about page*/
 .about_container {
   padding: 3.2rem 5rem 5rem 5rem;
   display: flex;
@@ -14,7 +15,7 @@
   width: 80%;
   display: inline-flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 2.5rem;
   align-items: center;
   margin-bottom: 4rem;
 }
@@ -32,3 +33,111 @@
 .avatarImage {
   margin-bottom: 1rem;
 }
+.about_span {
+  font-weight: bold;
+  font-size: 1.1rem;
+  line-height: 30px;
+  /* letter-spacing: 1px; */
+  text-align: center;
+}
+/* end of about page */
+
+/* blood bank  */
+
+.blood_bank_bg {
+  padding: 3rem 9rem;
+}
+.search_bg {
+  display: flex;
+  flex-direction: column;
+}
+.search_content {
+  /* width: 10rem; */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.input_blood_bank {
+  width: 100%;
+  border-radius: 10px;
+  outline: none;
+  padding: 1rem 1.5rem 1rem 4rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: "Raleway", sans-serif;
+  /* border-color: black; */
+  border: 2px solid var(--main-black);
+}
+.search_btn {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 2;
+  cursor: pointer;
+  color: var(--main-xlight-grey);
+  height: 4rem;
+  width: 4rem;
+}
+.adv_search_label {
+  align-self: flex-end;
+  margin-top: 1rem;
+  color: var(--main-xlight-grey);
+}
+
+.filter_blood_bank_bg {
+  padding-top: 3rem;
+  /* display: inline-flex; */
+  display: flex;
+  flex-direction: row;
+}
+.blood_bank_desc {
+  width: 100%;
+}
+
+.filter_content {
+  margin-right: 3rem;
+
+  border-right: 3px solid #dfdcdc;
+  padding-right: 8rem;
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+}
+.input_label_content {
+  display: flex;
+  /* justify-content: s; */
+  align-items: center;
+  margin-top: 0.3rem;
+  font-weight: 400;
+  padding-left: 4%;
+}
+.checkbox_input {
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+.filter_label {
+  /* padding-top: 2rem; */
+  font-size: 1.3rem;
+  width: 120%;
+  /* width:100%; */
+  display: block;
+}
+
+.location_content {
+  margin-top: 1rem;
+}
+.location_content,
+.blood_content,
+.rh_content {
+  margin-bottom: 1rem;
+  /* width: 100%; */
+}
+.options_data {
+  margin-top: 0.8rem;
+}
+/* .search_icon {
+  height: 4rem;
+  width: 4rem;
+} */
+/* end of blood bank  */

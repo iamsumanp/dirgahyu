@@ -8,6 +8,11 @@ export const locations = [
   "Gausala",
   "Baneshwor",
 ];
+export const filterData = {
+  locations: ["Kathmandu", "Lalitpur", "Chabahil", "Bhaktapur", "Gausala"],
+  bloodGroup: ["A", "B", "AB", "O"],
+  rhesusD: ["+ve", "-ve"],
+};
 export const facilityData = [
   {
     name: "Grande Hospital",
@@ -47,5 +52,41 @@ export const teamMembers = [
     status: "Operational Head",
     image:
       "https://res.cloudinary.com/hire-station/image/upload/v1667631444/avatars/rggbnbup25ew5xlsbz95.png",
+  },
+];
+
+export const bloodBanks = [
+  {
+    name: "Grande Hospital",
+    id: 1,
+    address: "Tokha,Kathmandu",
+    image:
+      "https://res.cloudinary.com/hire-station/image/upload/v1668371592/dirgahyu/grande_logo_1_om7g34.png",
+    bloodtypes: ["A+ve", "O+ve", "B+ve"],
+  },
+  {
+    name: "Red Cross Society",
+    id: 2,
+    address: "Tokha,Kathmandu",
+    image:
+      "https://res.cloudinary.com/hire-station/image/upload/v1668371592/dirgahyu/redcrosslogo_1_zoi3wd.png",
+    bloodtypes: ["A+ve", "O+ve", "B+ve"],
+  },
+
+  {
+    name: "Chirayu Hospital",
+    id: 3,
+    address: "Tokha,Kathmandu",
+    image:
+      "https://res.cloudinary.com/hire-station/image/upload/v1668371592/dirgahyu/redcrosslogo_1_zoi3wd.png",
+    bloodtypes: ["A+ve", "O+ve", "B+ve"],
+  },
+  {
+    name: "SOS Village",
+    id: 3,
+    address: "Tokha,Kathmandu",
+    image:
+      "https://res.cloudinary.com/hire-station/image/upload/v1668371592/dirgahyu/redcrosslogo_1_zoi3wd.png",
+    bloodtypes: ["A+ve", "O+ve", "B+ve"],
   },
 ];
