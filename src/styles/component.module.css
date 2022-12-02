@@ -208,3 +208,26 @@
   margin-right: 2rem;
 }
 /*end of details section   */
+
+/*volunteer list section*/
+.volunteer_list_container {
+  padding: 5rem 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: bold;
+  height: 90vh;
+}
+.volunteer_label {
+  font-size: 2rem;
+  border-bottom: 2px solid #e2402d;
+  padding-bottom: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.rdt_TableRow {
+  background-color: #e2402d;
+  height: 123rem;
+}
+
+/*end of  volunteer list section*/
