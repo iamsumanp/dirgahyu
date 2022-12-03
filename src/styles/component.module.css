@@ -225,9 +225,86 @@
   margin-bottom: 2rem;
 }
 
-/* .rdt_TableRow {
-  background-color: #e2402d;
-  height: 123rem;
-} */
-
 /*end of  volunteer list section*/
+
+/* request blood section */
+.requestBloodContainer {
+  /* padding: 5rem 8rem; */
+  padding: 7rem 0 8rem 0;
+  font-weight: bold;
+  display: flex;
+  display: 100%;
+  justify-content: center;
+}
+.req_blood_icon_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 10rem;
+}
+.req_blood_label_content {
+  display: flex;
+  flex-direction: column;
+}
+.req_blood_label {
+  background-color: var(--main-red);
+  color: var(--main-white);
+  font-size: 2rem;
+  /* display: block; */
+  padding: 0.1rem;
+  width: 67%;
+  margin-bottom: 2rem;
+  /* align-self: center; */
+}
+.req_blood_icon {
+  margin-top: 2rem;
+  height: 16rem;
+  width: 17rem;
+}
+.requestForm {
+  display: flex;
+  flex-direction: column;
+}
+.input_flex {
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+.select_input_flex {
+  display: flex;
+  /* margin: 1.5rem 0; */
+  margin: 1.5rem 0 1.5rem 0;
+}
+
+.input_content {
+  background-color: #eeeeee;
+  /* color: #989898; */
+  border: none;
+  padding: 0.7rem 1rem;
+  font-size: 1rem;
+  outline: none;
+  font-weight: bold;
+  border-radius: 2px;
+}
+.input_content1 {
+  background-color: #eeeeee;
+  color: #818181;
+  border: none;
+  padding: 0.7rem 1rem;
+  font-size: 1rem;
+  outline: none;
+  font-weight: bold;
+  border-radius: 2px;
+  cursor: pointer;
+  width: 100%;
+  /* margin-right: 3rem; */
+}
+.request_btn {
+  border: none;
+  padding: 1rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: var(--main-white);
+  background-color: var(--main-red);
+  border-radius: 2px;
+}
+/* end request blood section */

@@ -76,8 +76,8 @@ export default function Home() {
                       onChange={(e) => setBGroup(e.target.value)}
                       className={styles.select_comp}
                     >
-                      {bloodGroup.map((option) => (
-                        <option value={option} key={option}>
+                      {bloodGroup.map((option, index) => (
+                        <option value={option} key={index}>
                           {option}
                         </option>
                       ))}
