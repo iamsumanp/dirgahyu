@@ -26,3 +26,20 @@ body {
   font-family: "Lato", sans-serif;
   /* overflow-x: hidden; */
 }
+
+/* override table styling */
+/* .rdt_TableBody { */
+/* padding-left: 54rem; */
+/* font-weight: bold;
+  font-size: large; */
+/* } */
+/* .rdt_Table { */
+/* padding: 10rem; */
+/* font-weight: bold; */
+/* border: none; */
+/* font-size: 10rem; */
+/* } */
+/* .dApqnJ {
+  font-weight: bold;
+  font-size: 10rem;
+} */

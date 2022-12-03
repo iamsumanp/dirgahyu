@@ -3,6 +3,8 @@ import DataTable from "react-data-table-component";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import styled from "styled-components";
+import { GetServerSideProps } from "next";
+// import "../styles/customstyling.css";
 
 interface Ivolunteers {
   id: number;
@@ -10,6 +12,7 @@ interface Ivolunteers {
   bloodType: string;
   rhType: string;
   contactNumber: string;
+  // i?: any;
 }
 
 // interface IvolunteerListData {
@@ -22,14 +25,34 @@ interface Ivolunteers {
 // [];
 
 const columns = [
+  // { name: "S.N", selector: (row: Ivolunteers, i: any) => i + 1 }, //TODO: check if i has alternative type other than any
   { name: "S.N", selector: (row: Ivolunteers) => row.id },
   { name: "Name", selector: (row: Ivolunteers) => row.name },
   { name: "Blood Type", selector: (row: Ivolunteers) => row.bloodType },
   { name: "Rh Type", selector: (row: Ivolunteers) => row.rhType },
-  { name: "Contact Number", selector: (row: Ivolunteers) => row.contactNumber },
+  {
+    name: "Contact Number",
+    selector: (row: Ivolunteers) => row.contactNumber,
+    right: true,
+  },
 ];
 
 export default function VolunteerList({ volunteerListData }: any) {
+  const customStyles = {
+    rows: {
+      style: {
+        fontWeight: "bold",
+        fontSize: "1rem",
+      },
+    },
+    headCells: {
+      style: {
+        fontWeight: "bolder",
+        fontSize: "1.2rem",
+      },
+    },
+  };
+
   //! fix the type from any to array of objects
   const [userdata, setUserData] = useState([]); //? check this
 
@@ -44,12 +67,18 @@ export default function VolunteerList({ volunteerListData }: any) {
         data={userdata}
         // className={styles.tableContainer}
         pagination
+        customStyles={customStyles}
+        responsive={true}
+        // pointerOnHover={true}
+        highlightOnHover={true}
+        // paginationPerPage={10}
+        paginationRowsPerPageOptions={[5, 10]}
       ></DataTable>
     </div>
   );
 }
 
-export async function getServerSideProps() {
+export const getServerSideProps: GetServerSideProps = async () => {
   const response = await fetch("http://localhost:4000/userData");
 
   const userData = await response.json();
@@ -65,4 +94,4 @@ export async function getServerSideProps() {
       volunteerListData: userData,
     },
   };
-}
+};

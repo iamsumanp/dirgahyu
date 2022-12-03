@@ -216,7 +216,7 @@
   flex-direction: column;
   align-items: center;
   font-weight: bold;
-  height: 90vh;
+  height: 100vh;
 }
 .volunteer_label {
   font-size: 2rem;
@@ -225,9 +225,9 @@
   margin-bottom: 2rem;
 }
 
-.rdt_TableRow {
+/* .rdt_TableRow {
   background-color: #e2402d;
   height: 123rem;
-}
+} */
 
 /*end of  volunteer list section*/
