@@ -236,7 +236,8 @@
   display: 100%;
   justify-content: center;
 }
-.req_blood_icon_container {
+.req_blood_icon_container,
+.donate_blood_icon_container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -257,10 +258,10 @@
   /* align-self: center; */
 }
 .req_blood_icon {
-  margin-top: 2rem;
   height: 16rem;
   width: 17rem;
 }
+
 .requestForm {
   display: flex;
   flex-direction: column;
@@ -308,3 +309,32 @@
   border-radius: 2px;
 }
 /* end request blood section */
+/* donate section */
+
+.donate_blood_icon {
+  margin-top: 2rem;
+  height: 12rem;
+  width: 20rem;
+}
+
+.donate_desc_label {
+  /* width: 50%; */
+  margin-top: 4rem;
+  font-size: 2.2rem;
+  height: 100%;
+  width: 100%;
+}
+
+/* .req_blood_icon_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 10rem;
+} */
+.donate_blood_icon_container {
+  width: 20rem;
+}
+.primary_label_color {
+  color: var(--main-red);
+}
+/* end of  donate section */

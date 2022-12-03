@@ -36,7 +36,7 @@ export default function Home() {
             <p className={styles.p_dirgahyu}>A pint can save many lives</p>
             <div className={styles.bannerBtn}>
               <button className={styles.req_donate_btn}>
-                <Link href="/blood-bank" style={{ textDecoration: "none" }}>
+                <Link href="/requestBlood" style={{ textDecoration: "none" }}>
                   Request Blood
                 </Link>
               </button>
@@ -48,7 +48,9 @@ export default function Home() {
                 <TiLocationArrow className={styles.icon} size={20} />
                 {/* <span>1</span> */}
                 <span className={styles.blood_bank_req_label}>
-                  Blood Banks Near Me
+                  <Link href="/blood-bank" style={{ textDecoration: "none" }}>
+                    Blood Banks Near Me
+                  </Link>
                 </span>
               </div>
               {/* </Link> */}
