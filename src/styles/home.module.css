@@ -209,6 +209,7 @@
 .donate_blood_btn {
   border: none;
   background-color: var(--main-white);
+  cursor: pointer;
   color: var(--main-red);
   font-weight: bold;
   /* text-transform: uppercase; */

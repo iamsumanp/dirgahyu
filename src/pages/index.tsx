@@ -40,7 +40,11 @@ export default function Home() {
                   Request Blood
                 </Link>
               </button>
-              <button className={styles.req_donate_btn}>Donate Blood</button>
+              <button className={styles.req_donate_btn}>
+                <Link href="/donateBlood" style={{ textDecoration: "none" }}>
+                  Donate Blood
+                </Link>
+              </button>
             </div>
             <div className={styles.bannerlinks_bg}>
               {/* <Link href="#" className={styles.nv_link}> */}
@@ -174,7 +178,9 @@ export default function Home() {
       </div>
       <div className={styles.donate_container}>
         <h2>Donate to save life &quot;A pint can save many lives&quot;</h2>
-        <button className={styles.donate_blood_btn}>Donate Blood</button>
+        <Link href="/donateBlood" style={{ textDecoration: "none" }}>
+          <button className={styles.donate_blood_btn}>Donate Blood</button>
+        </Link>
       </div>
     </div>
   );

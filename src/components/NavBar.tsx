@@ -24,8 +24,10 @@ export const NavBar = () => {
             </Link>
           </li>
           <li className={styles.listItem}>
-            <FaHandshake className={styles.icon} />
-            Join Us
+            <Link href="/register" style={{ textDecoration: "none" }}>
+              <FaHandshake className={styles.icon} />
+              Join Us
+            </Link>
           </li>
           <li>
             <Link href="/about" className={styles.listItem}>
@@ -33,12 +35,20 @@ export const NavBar = () => {
             </Link>
           </li>
           <li className={styles.listItem}>
-            <BsFillPeopleFill className={styles.icon} /> Volunteers
+            <Link href="/volunteerList" style={{ textDecoration: "none" }}>
+              <BsFillPeopleFill className={styles.icon} /> Volunteers
+            </Link>
           </li>
         </ul>
         <div className={styles.loginbtndiv}>
           <MdLogin className={styles.icon} size={20} />
-          <span className={styles.LogInBtn}>LogIn</span>
+          <Link href="/login" className={styles.listItem}>
+            <span className={styles.LogInBtn}>
+              {/* <Link href="/about" className={styles.listItem}> */}
+              LogIn
+              {/* </Link> */}
+            </span>
+          </Link>
         </div>
       </div>
     </div>
