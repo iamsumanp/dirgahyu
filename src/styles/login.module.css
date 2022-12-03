@@ -1,0 +1,100 @@
+.loginContainer {
+  display: flex;
+  align-items: center;
+  padding: 5rem 8rem;
+  justify-content: center;
+  /* width: 100%; */
+  font-weight: bold;
+}
+.dirgahyu_icon_image {
+  height: 10rem;
+  width: 9rem;
+  margin-right: 10rem;
+}
+.login_content {
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+}
+.login_label {
+  font-size: 2rem;
+  /* display: block; */
+  padding-bottom: 0.5rem;
+  width: 30%;
+  margin-bottom: 3rem;
+  border-bottom: 2px solid var(--main-red);
+}
+.user_box {
+  position: relative;
+}
+
+.user_box_input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  /* color: #fff; */
+  margin-bottom: 30px;
+  border: none;
+  /* border-bottom: 1px solid #fff; */
+  outline: none;
+  background: transparent;
+  border-bottom: 2px solid rgb(206, 206, 206);
+  /* width: 1%; */
+  font-weight: bold;
+}
+
+.user_box_label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  /* color: #fff; */
+  color: var(--main-xlight-grey);
+
+  pointer-events: none;
+  transition: 0.5s ease all;
+  display: flex;
+  align-items: center;
+}
+
+.user_box_input:focus ~ .user_box_label,
+.user_box_input:valid ~ .user_box_label {
+  top: -25px;
+  left: 0;
+  font-size: 14px;
+}
+
+.labelclass {
+  margin-left: 0.5rem;
+}
+.remember_checkbox_content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.loginBtn {
+  border: none;
+  padding: 0.7rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: var(--main-white);
+  background-color: var(--main-red);
+  border-radius: 2px;
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+.loginAuthMethodsContainer {
+  display: flex;
+  align-items: center;
+}
+.sign_in_cred_label {
+  margin-right: 1rem;
+}
+.icon_auth {
+  margin-right: 0.3rem;
+  height: 1.5rem;
+  width: 1.5rem;
+}
