@@ -17,7 +17,7 @@ export const NavBar = () => {
     <div className={styles.test}>
       <div className={styles.main_container} onClick={() => Close()}>
         <nav className={styles.navBar} onClick={(e) => e.stopPropagation()}>
-          <Link href="/register">
+          <Link href="/">
             <Image
               src="https://res.cloudinary.com/hire-station/image/upload/v1668150540/dirgahyu/dirgahyu-small_c7dbos.png"
               alt="Galaxy"

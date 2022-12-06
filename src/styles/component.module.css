@@ -37,7 +37,6 @@
   font-weight: bold;
   font-size: 1.1rem;
   line-height: 30px;
-  /* letter-spacing: 1px; */
   text-align: center;
 }
 /* end of about page */
@@ -66,14 +65,13 @@
   font-size: 1.2rem;
   font-weight: bold;
   font-family: "Raleway", sans-serif;
-  /* border-color: black; */
   border: 2px solid var(--main-xlight-grey);
 }
 .search_btn {
   position: absolute;
   top: 10px;
   left: 10px;
-  z-index: 2;
+  z-index: 0;
   cursor: pointer;
   color: var(--main-xlight-grey);
   height: 4rem;
@@ -87,7 +85,6 @@
 
 .filter_blood_bank_bg {
   padding-top: 3rem;
-  /* display: inline-flex; */
   display: flex;
   flex-direction: row;
 }
@@ -106,7 +103,6 @@
 }
 .input_label_content {
   display: flex;
-  /* justify-content: s; */
   align-items: center;
   margin-top: 0.3rem;
   font-weight: 400;
@@ -117,10 +113,8 @@
   cursor: pointer;
 }
 .filter_label {
-  /* padding-top: 2rem; */
   font-size: 1.3rem;
   width: 120%;
-  /* width:100%; */
   display: block;
 }
 
@@ -131,7 +125,6 @@
 .blood_content,
 .rh_content {
   margin-bottom: 1rem;
-  /* width: 100%; */
 }
 .options_data {
   margin-top: 0.8rem;
@@ -185,13 +178,10 @@
   margin-top: 2rem;
 }
 .data_pint_content {
-  /* display: inline-flex; */
   display: flex;
   width: 100%;
   margin-bottom: 1rem;
   align-items: center;
-
-  /* justify-content: space-between; */
 }
 .blood_type_label {
   background-color: var(--main-red);
@@ -201,8 +191,6 @@
   width: 3rem;
 }
 .facility_logo {
-  /* height: 5rem;
-  width: 6rem; */
   width: 140px;
   height: 60px;
   margin-right: 2rem;
@@ -229,7 +217,6 @@
 
 /* request blood section */
 .requestBloodContainer {
-  /* padding: 5rem 8rem; */
   padding: 7rem 0 8rem 0;
   font-weight: bold;
   display: flex;
@@ -241,7 +228,6 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  /* align-items: center; */
   margin-right: 10rem;
 }
 .req_blood_label_content {
@@ -252,11 +238,9 @@
   background-color: var(--main-red);
   color: var(--main-white);
   font-size: 2rem;
-  /* display: block; */
   padding: 0.1rem;
   width: 67%;
   margin-bottom: 2rem;
-  /* align-self: center; */
 }
 .req_blood_icon {
   height: 16rem;
@@ -268,19 +252,20 @@
   display: flex;
   flex-direction: column;
 }
+.input_flex1,
 .input_flex {
   display: flex;
   margin-bottom: 1.5rem;
 }
 .select_input_flex {
   display: flex;
-  /* margin: 1.5rem 0; */
   margin: 1.5rem 0 1.5rem 0;
 }
 
-.input_content {
+.input_content,
+.input_content1,
+.input_content_first_name {
   background-color: #eeeeee;
-  /* color: #989898; */
   border: none;
   padding: 0.7rem 1rem;
   font-size: 1rem;
@@ -288,15 +273,13 @@
   font-weight: bold;
   border-radius: 2px;
 }
+
+.input_content_first_name {
+  margin-right: 3rem;
+}
 .input_content1 {
-  background-color: #eeeeee;
   color: #818181;
-  border: none;
-  padding: 0.7rem 1rem;
-  font-size: 1rem;
   outline: none;
-  font-weight: bold;
-  border-radius: 2px;
   cursor: pointer;
   width: 100%;
   /* margin-right: 3rem; */
@@ -312,6 +295,7 @@
   cursor: pointer;
 }
 /* end request blood section */
+
 /* donate section */
 
 .donate_blood_icon {
@@ -326,19 +310,12 @@
 }
 
 .donate_desc_label {
-  /* width: 50%; */
   margin-top: 4rem;
   font-size: 2.2rem;
   height: 100%;
   width: 100%;
 }
 
-/* .req_blood_icon_container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-right: 10rem;
-} */
 .donate_blood_icon_container {
   width: 20rem;
 }
@@ -348,11 +325,141 @@
 
 .join_us_label {
   font-size: 2rem;
-  /* display: block; */
   padding-bottom: 0.5rem;
   width: 55%;
   margin-bottom: 2rem;
   border-bottom: 2px solid var(--main-red);
 }
+.filter_title {
+  font-size: 1.5rem;
+}
+.options_filters {
+  font-size: 0.2rem;
+}
 
 /* end of  donate section */
+@media screen and (max-width: 1115px) {
+  .requestBloodContainer {
+    justify-content: space-between;
+    padding-right: 3rem;
+    padding-left: 3rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  .requestBloodContainer {
+    /* padding: 5rem 8rem; */
+    padding: 5rem 2rem 4rem 2rem;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .donate_blood_icon_container {
+    align-items: center;
+    margin-bottom: 3rem;
+  }
+
+  .donate_desc_label {
+    padding-left: 2rem;
+  }
+  .input_flex1 {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .input_content_first_name {
+    margin-right: 0;
+  }
+  .about_container {
+    padding: 3.2rem 1rem 5rem 1rem;
+  }
+
+  .team_section {
+    display: inline-flex;
+    gap: 2rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .volunteer_list_container {
+    padding: 5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    height: 100vh;
+  }
+  .req_blood_icon_container {
+    width: 100%;
+  }
+
+  .req_blood_label {
+    font-size: 1.5rem;
+    display: inline;
+    padding: 0.5rem 0 0.5rem 1.5rem;
+  }
+  .req_blood_icon {
+    height: 13rem;
+    width: 14rem;
+    align-self: center;
+    margin-bottom: 3.5rem;
+  }
+  .donate_blood_icon {
+    height: 10rem;
+    width: 18rem;
+  }
+  .donate_desc_label {
+    font-size: 1.9rem;
+  }
+  .blood_bank_bg {
+    padding: 3rem 2rem;
+  }
+  .filter_content {
+    margin-right: 1rem;
+
+    border-right: 3px solid #dfdcdc;
+    padding-right: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+  }
+  .filter_title {
+    font-size: 1rem;
+  }
+  .filter_label {
+    font-size: 0.8rem;
+  }
+  .options_filters {
+    font-size: 0.6rem;
+  }
+
+  .input_label_content {
+    font-size: 0.7rem;
+    padding-left: 4%;
+  }
+  .checkbox_input {
+    margin-right: 0.2rem;
+  }
+  .details_container {
+    padding: 3.2rem 5rem 5rem 5rem;
+  }
+  .blood_bank_image_label_content {
+    padding-right: 0;
+  }
+  .avl_blood_types_content {
+    font-weight: bold;
+    margin-left: 1rem;
+  }
+  .blood_type_label {
+    margin-right: 1rem;
+    width: 4rem;
+  }
+  .hello_label {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .label_edit_container {
+    width: 120%;
+  }
+}

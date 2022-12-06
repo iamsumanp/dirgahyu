@@ -38,7 +38,7 @@ export default function BloodBankDetails(): JSX.Element {
           </div>
         </div>
         <div className={styles.avl_blood_types_content}>
-          <span style={{ fontSize: "1.5rem" }}>Available Blood Types</span>
+          <span className={styles.filter_title}>Available Blood Types</span>
           <div className={styles.avl_blood_types_data}>
             {dummyAvailableBloodData.map((data, index) => (
               <div key={index} className={styles.data_pint_content}>

@@ -65,13 +65,10 @@ export default function VolunteerList({ volunteerListData }: any) {
       <DataTable
         columns={columns}
         data={userdata}
-        // className={styles.tableContainer}
         pagination
         customStyles={customStyles}
         responsive={true}
-        // pointerOnHover={true}
         highlightOnHover={true}
-        // paginationPerPage={10}
         paginationRowsPerPageOptions={[5, 10]}
       ></DataTable>
     </div>

@@ -62,7 +62,6 @@
 .label_address_content {
   display: inline-flex;
   flex-direction: column;
-  /* justify-content: ; */
   align-items: center;
   gap: 0.5rem;
 }
@@ -76,11 +75,7 @@
     flex-direction: column-reverse;
     padding-top: 4rem;
   }
-  /* .icon_label_content {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-  } */
+
   .label_address_content {
     flex-direction: column;
     text-align: center;

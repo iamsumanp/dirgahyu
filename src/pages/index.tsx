@@ -124,7 +124,6 @@ export default function Home() {
             width={1000}
             alt="carousel"
             object-fit="cover"
-            // priority
             className={styles.dirgahyuImg}
           ></Image>
         </div>
@@ -134,16 +133,26 @@ export default function Home() {
           {facilityData.map((data) => (
             <div className={styles.facility_content} key={data.id}>
               <div className={styles.image_name_desc}>
-                <Image
-                  src={data.image}
-                  height={100}
-                  width={100}
-                  alt={data.name}
-                  className={styles.facility_logo}
-                />
+                <Link
+                  href="/blood-bank/grande"
+                  style={{ textDecoration: "none" }}
+                >
+                  <Image
+                    src={data.image}
+                    height={100}
+                    width={100}
+                    alt={data.name}
+                    className={styles.facility_logo}
+                  />
+                </Link>
                 <div className={styles.name_desc}>
                   <span className={styles.name_bloodtype_label}>
-                    {data.name}
+                    <Link
+                      href="/blood-bank/grande"
+                      style={{ textDecoration: "none" }}
+                    >
+                      {data.name}
+                    </Link>
                   </span>
                   <div className={styles.address_container}>
                     <MdLocationOn />

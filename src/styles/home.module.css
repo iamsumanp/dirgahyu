@@ -90,7 +90,6 @@
 }
 .search_btn {
   border: none;
-  /* padding: 0.2rem 0.4rem; */
   padding: 8px;
 
   background-color: var(--main-grey);
@@ -152,13 +151,11 @@
   align-items: center;
 }
 .address_label {
-  /* font-weight: 400; */
   font-size: 0.9rem;
 }
 .blood_types {
   display: flex;
-  /* display: inline-flex;
-  gap: 10px; */
+
   width: 100%;
   justify-content: space-between;
 }

@@ -32,12 +32,11 @@ export default function DonateBlood() {
         </span>
       </div>
       <form className={styles.requestForm}>
-        <div className={styles.input_flex}>
+        <div className={styles.input_flex1}>
           <input
             type="text"
             placeholder="First Name :"
-            className={styles.input_content}
-            style={{ marginRight: "3rem" }}
+            className={styles.input_content_first_name}
           />
           <input
             type="text"

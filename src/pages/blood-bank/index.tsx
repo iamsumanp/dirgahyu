@@ -31,7 +31,7 @@ export default function Bloodbank(): JSX.Element {
         </div>
         <div className={styles.filter_blood_bank_bg}>
           <div className={styles.filter_content}>
-            <span style={{ fontSize: "1.5rem" }}>Filters</span>
+            <span className={styles.filter_title}>Filters</span>
             <div className={styles.location_content}>
               <span className={styles.filter_label}>Location</span>
 
@@ -44,7 +44,12 @@ export default function Bloodbank(): JSX.Element {
                         type="checkbox"
                         className={styles.checkbox_input}
                       />
-                      <span>{data}</span>
+                      <span
+                        className="options_filters"
+                        // style={{ fontSize: "0.2rem" }}
+                      >
+                        {data}
+                      </span>
                     </div>
                   ))}
               </div>
@@ -60,7 +65,7 @@ export default function Bloodbank(): JSX.Element {
                         type="checkbox"
                         className={styles.checkbox_input}
                       />
-                      <span>{data}</span>
+                      <span className="options_filters">{data}</span>
                     </div>
                   ))}
               </div>

@@ -68,11 +68,7 @@ export default function Login() {
         <button className={styles.loginBtn}>Login</button>
         <div className={styles.loginAuthMethodsContainer}>
           <span className={styles.sign_in_cred_label}>Or Login with:</span>
-          <BsFacebook
-            fill="	#4267B2"
-            className={styles.icon_auth}
-            // size={20}
-          />{" "}
+          <BsFacebook fill="	#4267B2" className={styles.icon_auth} />{" "}
           <AiFillTwitterCircle fill=" #00acee" className={styles.icon_auth} />{" "}
           <FcGoogle className={styles.icon_auth} />
         </div>

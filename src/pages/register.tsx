@@ -29,7 +29,7 @@ export default function Register() {
             height={1000}
             width={1000}
             className={styles.donate_blood_icon1}
-          ></Image>
+          />
         </div>
         <span className={styles.donate_desc_label}>
           <span className={styles.primary_label_color}>1 blood donation</span>{" "}
@@ -37,12 +37,11 @@ export default function Register() {
         </span>
       </div>
       <form className={styles.requestForm}>
-        <div className={styles.input_flex}>
+        <div className={styles.input_flex1}>
           <input
             type="text"
             placeholder="First Name :"
-            className={styles.input_content}
-            style={{ marginRight: "3rem" }}
+            className={styles.input_content_first_name}
           />
           <input
             type="text"
