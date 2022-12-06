@@ -4,7 +4,6 @@ import Image from "next/image";
 import { AiFillHome, AiFillInfoCircle } from "react-icons/ai";
 import { FaHandshake } from "react-icons/fa";
 import { BsFillPeopleFill } from "react-icons/bs";
-import { IoIosClose } from "react-icons/io";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdClose } from "react-icons/io";
 import { MdLogin } from "react-icons/md";
@@ -18,13 +17,15 @@ export const NavBar = () => {
     <div className={styles.test}>
       <div className={styles.main_container} onClick={() => Close()}>
         <nav className={styles.navBar} onClick={(e) => e.stopPropagation()}>
-          <Image
-            src="https://res.cloudinary.com/hire-station/image/upload/v1668150540/dirgahyu/dirgahyu-small_c7dbos.png"
-            alt="Galaxy"
-            height={1000}
-            width={1000}
-            className={styles.logoImg}
-          />
+          <Link href="/register">
+            <Image
+              src="https://res.cloudinary.com/hire-station/image/upload/v1668150540/dirgahyu/dirgahyu-small_c7dbos.png"
+              alt="Galaxy"
+              height={1000}
+              width={1000}
+              className={styles.logoImg}
+            />
+          </Link>
           <div className={styles.navSection}>
             <ul className={click ? styles.nav_ul_active : styles.nav_ul}>
               <li className={styles.listItem}>
@@ -38,13 +39,21 @@ export const NavBar = () => {
                 </Link>
               </li>
               <li className={styles.listItem}>
-                <Link href="/register" className={styles.nextLink}>
+                <Link
+                  href="/register"
+                  className={styles.nextLink}
+                  onClick={handleClick}
+                >
                   <FaHandshake className={styles.icon} />
                   Join Us
                 </Link>
               </li>
               <li className={styles.listItem}>
-                <Link href="/about" className={styles.nextLink}>
+                <Link
+                  href="/about"
+                  className={styles.nextLink}
+                  onClick={handleClick}
+                >
                   <AiFillInfoCircle className={styles.icon} />
                   About Us
                 </Link>
@@ -54,9 +63,21 @@ export const NavBar = () => {
                   href="/volunteerList"
                   style={{ textDecoration: "none" }}
                   className={styles.nextLink}
+                  onClick={handleClick}
                 >
                   <BsFillPeopleFill className={styles.icon} />
                   Volunteers
+                </Link>
+              </li>
+              <li className={styles.listItem1}>
+                <Link
+                  href="/login"
+                  style={{ textDecoration: "none" }}
+                  className={styles.nextLink}
+                  onClick={handleClick}
+                >
+                  <MdLogin className={styles.icon} />
+                  LogIn
                 </Link>
               </li>
             </ul>
@@ -69,13 +90,13 @@ export const NavBar = () => {
                 )}
               </div>
               <div className={styles.loginbtndiv}>
-                <Link href="/login" className={styles.nextLink}>
+                <Link
+                  href="/login"
+                  className={styles.nextLink}
+                  onClick={handleClick}
+                >
                   <MdLogin className={styles.icon} size={20} />
-                  <span className={styles.LogInBtn}>
-                    {/* <Link href="/about" className={styles.listItem}> */}
-                    LogIn
-                    {/* </Link> */}
-                  </span>
+                  <span className={styles.LogInBtn}>LogIn</span>
                 </Link>
               </div>
             </div>

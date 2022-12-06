@@ -36,7 +36,6 @@
 .social_media_icon {
   height: 2rem;
   width: 2rem;
-  fill: var(--main-red);
 }
 .social_media_icon:nth-child(2),
 .social_media_icon:nth-child(3) {
@@ -71,4 +70,36 @@
   font-size: 1.5rem;
   font-weight: bold;
   font-family: "Raleway", sans-serif !important;
+}
+@media screen and (max-width: 726px) {
+  .footer_container {
+    flex-direction: column-reverse;
+    padding-top: 4rem;
+  }
+  /* .icon_label_content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  } */
+  .label_address_content {
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .contact_content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .label_rl {
+    text-align: center;
+    display: block;
+    margin-bottom: 1rem;
+  }
+  .connect_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }

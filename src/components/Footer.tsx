@@ -22,10 +22,13 @@ export const Footer = () => {
         <div className={styles.connect_content}>
           <span className={styles.label_rl}>Get connected with us:</span>
           <div className={styles.social_media_links_content}>
-            <BsFacebook className={styles.social_media_icon} />
-            <AiFillTwitterCircle className={styles.social_media_icon} />
-            <BsYoutube className={styles.social_media_icon} />
-            <BsLinkedin className={styles.social_media_icon} />
+            <BsFacebook className={styles.social_media_icon} fill="	#4267B2" />
+            <AiFillTwitterCircle
+              className={styles.social_media_icon}
+              fill="#00acee"
+            />
+            <BsYoutube className={styles.social_media_icon} fill="#c4302b" />
+            <BsLinkedin className={styles.social_media_icon} fill="#0A66C2" />
           </div>
         </div>
       </div>

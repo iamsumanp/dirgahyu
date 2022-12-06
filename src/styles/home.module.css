@@ -10,7 +10,6 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  /* background-color: aqua; */
   padding-top: 5rem;
 }
 .p_dirgahyu {
@@ -19,7 +18,6 @@
 }
 .title_dirgahyu {
   font-family: "Raleway", sans-serif !important;
-  /* font-size: 50px; */
   font-size: 3rem;
 }
 .span_dirgahyu {
@@ -112,16 +110,13 @@
   padding-top: 3rem;
   display: flex;
   padding-left: 6rem;
-  /* overflow-x: hidden; */
 
   flex-direction: row;
 }
 .facilites_section {
   flex: 1;
-  /* border-style: solid; */
 }
 .facility_content {
-  /* border-style: solid; */
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -134,8 +129,6 @@
 }
 
 .facility_logo {
-  /* height: 5rem;
-  width: 6rem; */
   width: 120px;
   height: 40px;
   margin-right: 2rem;
@@ -178,9 +171,7 @@
 
 .availability_section {
   flex: 0.6;
-  /* padding-left: 5%; */
   display: inline-flex;
-  /* gap: 0.1rem; */
   justify-content: center;
   align-items: center;
 }
@@ -216,4 +207,116 @@
   padding: 0.5rem 1rem;
   font-size: 1.2rem;
   font-family: "Raleway", sans-serif !important;
+}
+
+@media screen and (max-width: 1000px) {
+  .containerBg {
+    display: flex;
+    flex-direction: column;
+  }
+  .clipPathBg {
+    display: none;
+  }
+  .facilities_container_bg {
+    padding: 3rem;
+    display: flex;
+    padding-left: 6rem;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 670px) {
+  .containerBg {
+    display: flex;
+    flex-direction: column;
+    padding-left: 2rem;
+  }
+  .clipPathBg {
+    display: none;
+  }
+  .bannerlinks_bg {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+    align-items: flex-start;
+  }
+  .req_donate_btn {
+    border: none;
+    font-family: "Raleway", sans-serif !important;
+    padding: 7px 20px;
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--main-white);
+    margin-right: 15%;
+    background-color: var(--main-red);
+  }
+  .blood_bank_req_link {
+    padding-top: 1rem;
+  }
+  .search_content {
+    padding-right: 3rem;
+  }
+  .facilities_container_bg {
+    padding-top: 3rem;
+    display: flex;
+    padding-left: 2rem;
+
+    /* flex-direction: row; */
+  }
+  .facility_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .image_name_desc,
+  .facility_logo {
+    margin-bottom: 2rem;
+  }
+  .image_name_desc,
+  .donate_container {
+    flex-direction: column;
+  }
+  .donate_container {
+    align-items: center;
+  }
+  .donate_blood_btn {
+    margin-top: 2rem;
+  }
+  .availability_section {
+    margin: 2rem 0;
+  }
+  .avl_label {
+    margin-right: 1.5rem;
+  }
+  .donate_label {
+    text-align: center;
+  }
+  .title_dirgahyu {
+    font-size: 2.5rem;
+  }
+  .p_dirgahyu {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+  }
+  .options_search_content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .options_content {
+    display: inline-flex;
+    gap: 1rem;
+    flex-direction: column;
+    margin-right: 0;
+    width: 100%;
+  }
+  .search_btn {
+    margin-top: 1rem;
+    width: 95%;
+  }
+  .search_content {
+    padding-right: 1.5rem;
+  }
 }

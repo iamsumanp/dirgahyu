@@ -47,18 +47,15 @@ export default function Home() {
               </button>
             </div>
             <div className={styles.bannerlinks_bg}>
-              {/* <Link href="#" className={styles.nv_link}> */}
               <div className={styles.blood_bank_req_link}>
                 <TiLocationArrow className={styles.icon} size={20} />
-                {/* <span>1</span> */}
                 <span className={styles.blood_bank_req_label}>
                   <Link href="/blood-bank" style={{ textDecoration: "none" }}>
                     Blood Banks Near Me
                   </Link>
                 </span>
               </div>
-              {/* </Link> */}
-              {/* <Link href="#" className={styles.nv_link}> */}
+
               <div className={styles.blood_bank_req_link}>
                 <GiPlainCircle
                   className={styles.icon}
@@ -69,7 +66,6 @@ export default function Home() {
                   Live Request
                 </span>
               </div>
-              {/* </Link> */}
             </div>
             <div className={styles.search_content}>
               <span className={styles.search_label}>Search Blood</span>
@@ -177,7 +173,9 @@ export default function Home() {
         </div>
       </div>
       <div className={styles.donate_container}>
-        <h2>Donate to save life &quot;A pint can save many lives&quot;</h2>
+        <h2 className={styles.donate_label}>
+          Donate to save life &quot;A pint can save many lives&quot;
+        </h2>
         <Link href="/donateBlood" style={{ textDecoration: "none" }}>
           <button className={styles.donate_blood_btn}>Donate Blood</button>
         </Link>
