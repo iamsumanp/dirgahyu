@@ -13,7 +13,7 @@ export default function About() {
           the blood management by the means of website. With the motto of “A
           pint can save many lives”, the core goal of this website is to manage
           and mitigate the bridge between the donor, blood banks and the
-          receiver
+          receiver.
         </span>
         <span className={styles.about_span}>
           The main motivation for this website has to be the MRR group in
