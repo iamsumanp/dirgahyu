@@ -119,7 +119,7 @@ export default function Home() {
         </div>
         <div className={styles.clipPathBg}>
           <Image
-            src="https://res.cloudinary.com/hire-station/image/upload/v1668150541/dirgahyu/donate_s0xjm2.jpg"
+            src="https://res.cloudinary.com/hire-station/image/upload/v1676479496/dirgahyu/donate_4_p3guw1.png"
             height={1000}
             width={1000}
             alt="carousel"
